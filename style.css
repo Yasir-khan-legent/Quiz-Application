@@ -1,0 +1,104 @@
+
+
+ /* Reset and base styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+#count{
+   font-size: 17px;
+   font-weight: 700;
+     color: #3b3b98;
+}
+
+body {
+  background: linear-gradient(to right, #fdfbfb, #ebedee);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.quiz-container {
+  background: #ffffff;
+  padding: 30px;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+  width: 100%;
+  text-align: left;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 2.5em;
+  font-weight: 700;
+  color: #3b3b98;
+}
+
+#ques {
+  font-size: 15px;
+  font-weight: 500;
+  margin-bottom: 20px;
+  color: #444;
+  margin-left: 5px;
+}
+
+label {
+  display: block;
+  background-color: #f0f4f8;
+  padding: 10px 15px;
+  margin: 10px 0;
+  border-radius: 8px;
+  transition: background 0.3s ease;
+  cursor: pointer;
+}
+
+label:hover {
+  background-color: #e0e8f0;
+}
+
+input[type="radio"] {
+  margin-right: 10px;
+}
+
+#btn {
+  background-color: #3b3b98;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  font-size: 1em;
+  cursor: pointer;
+  width: 100%;
+  margin-top: 20px;
+  transition: background 0.3s ease;
+}
+
+#btn:hover {
+  background-color: #2f2f86;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .quiz-container {
+    padding: 20px;
+  }
+
+  h1 {
+    font-size: 1.5em;
+  }
+
+  #ques {
+    font-size: 1em;
+  }
+
+  #btn {
+    font-size: 0.9em;
+    padding: 10px 20px;
+  }
+}
